@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./login1.css">
+
+    <link rel="stylesheet" href="./footer.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Sign Us</title>
+
+	
+</head>
+
+<body>
+
+  {{>navbar}}
+    <div class="container">
+        <h2>Login</h2>
+         <!-- Display flash messages -->
+  {{#if flash.success}}
+    <div class="alert alert-success">
+      {{flash.success}}
+    </div>
+  {{/if}}
+
+  {{#if flash.error}}
+    <div class="alert alert-danger">
+      {{flash.error}}
+    </div>
+  {{/if}}
+        <form id="login-form" action="/signUs" method="POST">
+            <div class="form-group">
+                    <label for="userType">Type of User</label>
+                    <select id="userType" name="userType" >
+                        <option value="Normal-User">Normal User</option>
+                        <option value="Mess-Owner">Mess Owner</option>
+                    </select>
+                </div>
+          <div class="form-group">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+    
+          <div class="form-group">
+            <input class="btn-submit" type="submit" value="Login">
+          </div>
+        </form>
+    
+        <div class="login-link">
+          <p>If you are not registered, <a href="/login">register here</a>.</p>
+        </div>
+      </div>
+	<footer>
+		{{!-- <div id="footer-placeholder">
+		</div> --}}
+    {{>footer}}
+	  </footer>
+    
+
+</body>
+
+</html>

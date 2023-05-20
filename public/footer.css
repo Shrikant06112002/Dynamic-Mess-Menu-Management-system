@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+    --green: #27ae60;
+    --black: white;
+    --light-color: #666;
+    --box-shadow: 0. 5rem 1.5rem rgba(0, 0, 0, .1);
+
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+
+}
+.chirag-footer{
+    background:black;
+    align-content: ;
+}
+
+.chirag-footer .dabba-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+
+.chirag-footer .dabba-container .dabba h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem;
+}
+
+.chirag-footer .dabba-container .dabba h3 i{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem;
+}
+.chirag-footer .dabba-container .dabba .links{
+    display: block;
+    font-size: 1.2rem;
+    color:whitesmoke;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+chirag-footer .dabba-container .dabba .links i{
+    color: var(--green);
+    padding-right: 0.5rem;
+}
+chirag-footer .dabba-container .dabba .links:hover{
+    padding: 2rem;
+    background: var(--green);
+}
+
+.chirag-footer .dabba-container .dabba p{
+    line-height: 1.8rem;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem;
+}
+
+.chirag-footer .dabba-container .dabba .share a{
+    height: 4rem;
+    width: 4rem;
+    align-items: auto;
+    line-height: 4rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.chirag-footer .dabba-container .dabba .share a:hover{
+    background: var(--green);
+    color: #fff;
+}
+
+.chirag-footer .dabba-container .dabba .email{
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background:#f3f1f1;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.chirag-footer .dabba-container .dabba .payment-img{
+    margin-top: 2rem;
+    height: 6rem;
+}

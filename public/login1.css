@@ -1,0 +1,79 @@
+ /* Latest CSS Template */
+ * {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #242325;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	margin: 100px 0px 50px 556px;
+	background-color: #e0e0e0;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 2.5rem;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+	font-size:1.3rem
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+select {
+	height: 36px;
+}
+
+.radio-group {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.radio-label {
+	margin-right: 10px;
+}
+
+.btn-submit {
+	background-color: #4caf50;
+	color: #ffffff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.btn-submit:hover {
+	background-color: #45a049;
+}
+.login-link{
+	font-size: 1.3rem;
+}

@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "mongoose": "^7.1.1",
+    "nodemon": "^2.0.22",
+    "validator": "^13.9.0"
+  },
+  "name": "website",
+  "version": "1.0.0",
+  "description": "responsive website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "shrikanr",
+  "license": "ISC"
+}

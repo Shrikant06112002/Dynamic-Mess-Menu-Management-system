@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./login1.css">
+    <link rel="stylesheet" href="./footer.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Registration Form</title>
+
+	
+</head>
+<!-- {{!-- <script>
+	$(function(){
+	  $("#navbar-placeholder").load("navbar.html");
+	});
+	</script>
+	<script>
+	  $(function(){
+		$("#footer-placeholder").load("footer.html");
+	  });
+	  </script> --}} -->
+<body>
+	<!-- Display flash messages -->
+    {{>navbar}}
+    <div class="container">
+        <h2>Registration Form</h2>
+        {{#if flash.success}}
+        <div class="alert alert-success">
+          {{flash.success}}
+        </div>
+        {{/if}}
+        
+        {{#if flash.error}}
+        <div class="alert alert-danger">
+          {{flash.error}}
+        </div>
+        {{/if}}
+        <form action= "/login" method="POST" id="registration-form">
+            <div id="normal-user-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required >
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" >
+                </div>
+                <div class="form-group">
+                    <label for="password">Confirm your Password:</label>
+                    <input type="password" id="password" name="conpassword" >
+                </div>
+
+                <div class="form-group">
+                    <label for="userType">Type of User</label>
+                    <select id="userType" name="userType" >
+                        <option value="Normal-User">Normal User</option>
+                        <option value="Mess-Owner">Mess Owner</option>
+                    </select>
+                </div>
+
+                <label for="userType">*Note:-The below detail is only required for mess owner</label>
+
+                <div class="form-group">
+                    <label for="number">Contact no.:</label>
+                    <input type="text" id="number" name="cnumber">
+                </div>
+
+                <div class="form-group">
+                    <label for="food-serving">Food Serving:</label>
+                    <select id="food-serving" name="foodServing" >
+                        <option value="">Select one</option>
+                        <option value="veg">Vegetarian</option>
+                        <option value="nonveg">Non-Vegetarian</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn-submit"  value="Submit">
+            </div>
+            <div class="login-link">
+                <p>If you are registered user, <a href="/signUs">click here</a>.</p>
+              </div>
+        </form>
+		
+    </div>
+	<footer>
+		<!-- {{!-- <div id="footer-placeholder">
+		</div> --}} -->
+        {{>footer}} 
+	  </footer>
+
+
+</body>
+
+</html>

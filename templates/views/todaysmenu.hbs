@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Today's Menu</title>
+        <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./footer.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #242325;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .menu-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="date"],
+        select,
+        input[type="text"],
+        input[type="email"],
+
+        input[type="checkbox"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+
+        }
+
+        .checkbox-group {
+            margin-top: 5px;
+        }
+
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    {{>navbar}}
+   
+    <div class="menu-form">
+        <form action="/todaysmenu" method="post">
+             <h1>Add Today's Menu</h1>
+           
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+             <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="messsName">Mess Name</label>
+                <input type="text" id="messsName" name="messsName" required>
+            </div>
+            <div class="form-group">
+                <label for="meal">Meals:</label>
+                <select id="meal" name="meal" required>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="riceplate">Riceplate(price):</label>
+                <input type="text" id="riceplate" name="riceplate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subji">Subji:</label>
+                    <label for="subji1">Subji 1</label>
+                    <input type="text" id="subji1" name="subji1" value="">
+                    <label for="subji2">Subji 2</label>
+                    <input type="text" id="subji2" name="subji2" value="">
+                    <label for="subji3">Subji 3</label>
+                    <input type="text" id="subji3" name="subji3" value="">
+                    
+            </div>
+
+            <div class="form-group">
+                <label for="rice">Rice:</label>
+                <input type="text" id="rice" name="rice" required>
+            </div>
+{{!--             
+            <div class="form-group">
+                <label for="drinks">Drinks:</label>
+                <div class="checkbox-group">
+                   
+                    <label for="milk">Milk</label>
+                    <input type="checkbox" id="milk" name="drinks[]" value="Milk">
+                    <label for="lassi">Lassi</label>
+                    <input type="checkbox" id="lassi" name="drinks[]" value="Lassi">
+                    
+                </div>
+            </div>
+
+            <label for="roti">Roti:</label>
+            <div class="form-group">
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="chapati" name="roti[]" value="Chapati">
+                    <label for="chapati">Chapati</label>
+                    <input type="checkbox" id="paratha" name="roti[]" value="Paratha">
+                    <label for="paratha">Paratha</label>
+                    <input type="checkbox" id="puranpoli" name="roti[]" value="Puran Poli">
+                    <label for="puranpoli">Puran Poli</label>
+                </div>
+            </div> --}}
+
+            <input type="submit" value="Add Menu"><br>
+        
+              
+        </form>
+            <a href="/addMenu"><input type="submit" value="Pervious Page"></a>
+    </div>
+
+</body>
+    <footer>
+        {{>footer}}
+    </footer>
+</html>

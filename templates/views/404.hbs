@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>404 Not Found</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #232323;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .error-content {
+      background-color: #333;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      text-align: center;
+      max-width: 400px;
+    }
+    .error-code {
+      font-size: 100px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #e74c3c;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .error-message {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .home-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .home-link:hover {
+      color: #e74c3c;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    {{>navbar}}
+  <div class="error-content">
+    <h1 class="error-code">404</h1>
+    <p class="error-message">Oops! The page you are looking for could not be found.</p>
+    <p class="error-message">Go back to the <a class="home-link" href="/">homepage</a>.</p>
+  </div>
+</body>
+
+</html>

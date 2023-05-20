@@ -1,0 +1,84 @@
+#contactt{
+    background: #242325;
+}
+#sign-in{
+    height: 580px;
+    width:750px;
+    margin:107px 0px 50px 265px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color:#e0e0e0;
+    border:5px solid rgb(216, 218, 201);
+    border-radius: 15px;
+    padding: 30px;
+}
+/* body{
+    background-color: aqua;
+} */
+#sign-in h3{
+    text-align:left;
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    padding-left: 0px;
+
+
+}
+#sign-in button{
+   color:white;
+   background-color: burlywood; 
+   width: 100px;
+   padding: 10px;
+   margin:8px;
+}
+#sign-in button:hover{
+    cursor: pointer;
+    background-color:rgb(115, 89, 54);
+}
+#contact-info{
+    height: 580px;
+    width:300px;
+    margin:107px 5px 50px 0px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color:#e0e0e0;
+    border:5px solid rgb(216, 218, 201);
+    border-radius: 15px;
+    padding: 30px;
+}
+#contact-info h3{
+    text-align:left;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    padding-left: 0px;
+
+
+}
+.sci{
+    display: flex;
+    word-spacing: 5px;
+    
+}
+.sci ion-icon{
+    width:40px;
+    height: 50px;
+    margin:6px;
+}
+#sign-in .form-label{
+    font-size: 1.7rem;
+}
+#sign-in .form-control{
+    font-size: 1.3rem;
+}
+#sign-in .form-floating{
+    font-size: 1.7rem;
+
+}
+#contact-info p{
+    font-size: 1.6rem;
+}

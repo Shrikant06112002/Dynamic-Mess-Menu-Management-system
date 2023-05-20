@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaugali</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./aboutus.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Headland+One&family=PT+Serif&family=Roboto+Slab&family=Roboto:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+{{!-- <script>
+  $(function(){
+    $("#navbar-placeholder").load("navbar.html");
+  });
+  </script>
+  <script>
+    $(function(){
+      $("#footer-placeholder").load("footer.html");
+    });
+    </script> --}}
+<body>
+<!-- navbar-start -->
+<!-- <header>
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./img/Daco_4331598-modified.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+    </a>
+    <h2 class="display-6" id="logo-name">Khaugali.</h2>
+
+  </div>
+</nav>
+    <nav class="navbarr">
+
+        <a class="active" href="#home">Home</a>
+        <a href="#dishes">Mess</a>
+        <a href="#about">About</a>
+        <a href="#contactt">Contact</a>
+        <!-- <a href="#feedback">Feedback</a> -->
+        <!-- <a href="./login.html">Login</a> -->
+    <!-- </nav>
+</header> --> 
+<!-- navbar-end -->
+<!--Navigation bar-->
+{{!-- <div id="navbar-placeholder">
+</div> --}}
+{{>navbar}}
+  <!--end of Navigation bar-->
+<!-- scrolling-img -->
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/masala-1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-lg-block" id="tittle-1">
+          <h1>FRESH, DELICIOUS & CONVINIENT MEALS!</h1>
+          <p>Welcome to Khaugalli.com
+            One place for your daily meals!</p>
+          <!-- <p>Some representative placeholder content for the first slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/img2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" id="tittle-2">
+          <h2>Best Mess Nearby</h2>
+          <h1>Mauli Mess</h1>
+          <p>Good hygenic food at affordable rate <br>   <button type="button" class="btn btn-secondary">View Menu</button></p>
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/masala-4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" id="tittle-3">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- scroll-img end -->
+
+  <!-- aboutus -->
+  <section class="about" id="about">
+    <h3 class="subheading">about us</h3>
+    <h1 class="heading">Why choose us?</h1>
+
+    <div class="aboutUs">
+
+        <div class="image">
+            <img src="./img/About-img5.avif" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Choose Best, Choose Us!</h3>
+            <p>Our website offers a convenient solution to help you save time and effort when searching for meals in your local area. We provide a comprehensive display of updated menus for all the mess in your locality, and also recommend the best meal for the day.</p> <p> You can easily browse through the menu and choose your desired meal, and then either visit the mess to order in person or place your order through our website.</p>
+
+            <div class="icons-containerr">
+                <div class="icons">
+                  <span class="material-symbols-outlined">
+                    local_shipping
+                    </span>
+                    <span>Free dilvery</span>
+                </div>
+
+                <div class="icons">
+                  <span class="material-symbols-outlined">
+                    account_balance
+                    </span>
+                    <span>Easy Payment</span>
+                </div>
+
+                <div class="icons">
+                  <span class="material-symbols-outlined">
+                    support_agent
+                    </span>
+                    <span>24/7 Service</span>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+<footer>
+  {{!-- <div id="footer-placeholder">
+  </div> --}}
+  {{>footer}}
+</footer>
+</body>
+
+</html>

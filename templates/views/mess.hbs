@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Menu</title>
+  <link rel="stylesheet" href="/navbar.css">
+  <link rel="stylesheet" href="style.css">
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #242325;
+            margin: 0;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #e0e0e0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            height:100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            padding-top: 350px;
+
+        }
+        #table-prev{
+            padding-bottom: 200px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        th {
+            background-color: #2b5c08;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+         tr:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .content{
+            padding:80px 550px 20px 644px;
+        }
+        h2{
+            font-size: 2rem;
+            color: #f2f2f2;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+{{>navbar}}
+<h1>Daily Menu</h1>
+
+{{#each messesData}}
+
+
+<table>
+
+  <tr>
+    <th>Date</th>
+    <th>Meal</th>
+    <th>Rice Plate</th>
+    <th>Subji 1</th>
+    <th>Subji 2</th>
+    <th>Subji 3</th>
+    <th>Rice</th>
+  </tr>
+      {{#each this.dailymenus}}
+
+  <h2>Mess Name: {{ this.messsName }}</h2>
+  <tr>
+    <td>{{ this.date }}</td>
+    <td>{{ this.meal }}</td>
+    <td>{{ this.riceplate }}</td>
+    <td>{{ this.subji1 }}</td>
+    <td>{{ this.subji2 }}</td>
+    <td>{{ this.subji3 }}</td>
+    <td>{{ this.rice }}</td>
+  </tr>
+  {{/each}}
+</table>
+
+{{/each}}
+
+
+</body>
+</html>
