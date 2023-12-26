@@ -1,4 +1,2 @@
 # Dynamic Mess Menu Management system
-Developed a user-friendly web application for convenient and reliable dining solutions tailored for students and working
-professionals.
-The innovative platform simplifies menu comparisons and facilitates seamless order placement faster
+Finding a suitable and reliable mess for daily meals can be a challenging task for individuals, including students and working professionals. To address this problem, this model was developed as a comprehensive web-based application. Leveraging HTML, CSS, and JavaScript for the frontend, Node.js for the backend, and MongoDB as the database system, this model offers a convenient solution by simplifying the search for the best mess in the nearby area. Users can easily compare menus and place orders, saving valuable time and effort in the process. This user-friendly platform aims to cater to the needs of both students and working professionals, providing a streamlined and efficient way to select and order meals on a daily basis.
